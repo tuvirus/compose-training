@@ -1,6 +1,6 @@
 package com.training.compose.lessons.statehoisting
 
-import android.R
+import android.R as androidR
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -61,7 +61,7 @@ fun PersonCardHoisting(person: Person, checkState: Boolean, onCheckChange: (Bool
             Text(text = person.age.toString())
             IconButton(onClick = { onCheckChange(!checkState) }) {
                 Image(
-                    painter = painterResource(id = if (checkState) R.drawable.checkbox_on_background else R.drawable.checkbox_off_background),
+                    painter = painterResource(id = if (checkState) androidR.drawable.checkbox_on_background else androidR.drawable.checkbox_off_background),
                     contentDescription = ""
                 )
             }

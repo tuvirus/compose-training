@@ -2,15 +2,12 @@ package com.training.compose.lessons.themes
 
 import android.content.Context
 import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Shapes
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.unit.dp
 import com.training.compose.R
 
 private fun DarkColorsTheme(context: Context) = darkColorScheme(
