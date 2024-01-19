@@ -57,7 +57,7 @@ dependencies {
 
     implementation(platform(libs.compose.bom))
     implementation(libs.bundles.compose)
-
+    implementation(libs.compose.navigation)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
