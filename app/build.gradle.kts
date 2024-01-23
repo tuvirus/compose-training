@@ -38,6 +38,7 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
@@ -60,6 +61,11 @@ dependencies {
     implementation(libs.compose.navigation)
     //For bottom Navigation Bar
     implementation(libs.androidx.compose.material)
+    //for interop activities
+    implementation(libs.compose.ui.viewbinding)
+    implementation(libs.androidx.compose.livedata)
+    implementation(libs.lifecycle.viewmodel.compose)
+    implementation(libs.android.material)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
